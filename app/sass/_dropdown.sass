@@ -1,0 +1,44 @@
+/*dropdown
+
+
+.dropdown
+  position: relative
+  cursor: pointer
+  font-size: 14px
+
+  .dropdown-list
+    background: white
+    padding: 5px 0
+    text-align: right
+    border: 1px solid #F2F2F2
+    position: absolute
+    background: white
+    right: 0
+    left: 0
+    max-height: 100px
+    overflow-x: hidden
+    overflow-y: scroll
+    display: none
+    z-index: 10
+    li
+      padding: 1px 5px
+      transition: all ease .3s
+      &:hover
+        color: white
+        background: $blue
+  .input-control
+  &::after
+    content: ''
+    width: 8px
+    height: 5px
+    background: url(../img/shape.svg) top/cover no-repeat
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    transition: all ease .3s
+
+  &.active
+    .input-control
+    &::after
+      transform: rotate(-180deg)

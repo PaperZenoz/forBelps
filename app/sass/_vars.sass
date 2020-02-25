@@ -1,0 +1,56 @@
+/* global
+
+$blue: #5A61ED
+$gray: #7C7C7C
+
+body
+  font-family: 'Work Sans'
+  background-color: #F4F5FC
+  padding: 60px
+  min-width: 320px
+
+h1, h2, p, ul, li
+  margin: 0px
+  padding: 0px
+  font-weight: normal
+
+*
+  box-sizing: border-box
+  outline: none
+
+  li
+    list-style: none
+
+input
+  background: transparent
+  text-align: left
+
+h2
+  font-weight: 500
+  font-size: 22px
+  letter-spacing: -0.46px
+
+.input-control
+  border: none
+  border-bottom: 1px solid #F2F2F2
+  width: 100%
+  font-size: 14px
+  height: 27px
+  &.error
+    color: #FF2828
+    border-bottom: 2px solid #FF2828
+
+.check
+  display: none
+  &:before
+  content: ''
+  width: 11px
+  height: 8px
+  background: url('../img/text-check.svg')
+  position: absolute
+  right: 0
+  bottom: 10px
+
+.animated
+  -webkit-animation-fill-mode: backwards
+  animation-fill-mode: backwards
